@@ -7,7 +7,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
   config.vm.box = "vagrantbox_es/trusty64"
   config.vm.box_url = 'https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box'
-  config.vm.host_name = 'trusty64-docker'
+  config.vm.host_name = 'trusty64-lldb-perf'
 
   # If the above box takes forever to download or fails completely use the below instead
   # It is 32bit but should work as well
@@ -30,5 +30,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     file.destination = '/home/vagrant/install-perf.sh'
   end 
 
-  # config.vm.provision :shell, :path => "bootstrap.sh"
+  config.vm.provision :shell, :path => "bootstrap.sh"
 end

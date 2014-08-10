@@ -14,7 +14,7 @@ apt-get update
 apt-get upgrade -y
  
 # basic build tools needed.
-apt-get install -y make build-essential elfutils libelf-dev  git llvm-3.5 clang-3.5
+apt-get install -y make build-essential elfutils libelf-dev git subversion llvm-3.5 clang-3.5
 
 # Building with clang is so much faster.
 echo 'export CC=clang' > .bash_aliases
