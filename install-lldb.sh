@@ -58,9 +58,10 @@ echo '+++ Building llvm +++'
 make -j${COMPILE_CPUS}
 
 # Before installing, remove clang and llvm
-echo '+++ Removing clang and llvm 3.5 +++'
-apt-get remove --purge -y llvm-3.5 clang-3.5
-apt-get autoremove -y
+# Not a good idea since `make install` needs clang to link
+#echo '+++ Removing clang and llvm 3.5 +++'
+#apt-get remove --purge -y llvm-3.5 clang-3.5
+#apt-get autoremove -y
  
 echo '+++ Installing latest llvm +++'
 make install
