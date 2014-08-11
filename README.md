@@ -50,7 +50,7 @@ vagrant ssh
 sudo ./install-perf.sh
 ```
 
-This installs the latest available `perf` version.
+This installs `perf` version `3.15.6`..
 
 ## What Now
 
