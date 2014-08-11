@@ -31,7 +31,7 @@ svn co http://llvm.org/svn/llvm-project/lldb/trunk lldb
 
 
 # Use this version of compiler-rt to prevent build errors.
-echo '+++ Not Fixing compiler-rt +++'
+echo '+++ Fixing compiler-rt +++'
 cd ../projects
 wget https://github.com/llvm-mirror/compiler-rt/archive/release_35.tar.gz
 tar xvf release_35.tar.gz
@@ -53,12 +53,12 @@ echo '+++ Configuring llvm +++'
   --with-cloog --with-isl                                 \
   --enable-shared
  
-echo '+++ Building llvm tools +++'
 # Just going to build the entire thing. This'll take a while.
+echo '+++ Building llvm +++'
 make -j${COMPILE_CPUS}
 
-echo '+++ Removing clang and llvm 3.5 +++'
 # Before installing, remove clang and llvm
+echo '+++ Removing clang and llvm 3.5 +++'
 apt-get remove --purge -y llvm-3.5 clang-3.5
 apt-get autoremove -y
  

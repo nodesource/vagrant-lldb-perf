@@ -2,7 +2,7 @@
 
 # This script assumes it's run as root, and has only been tested on Ubuntu.
 if [ `whoami` != "root" ]; then
-  echo "This install script must be run as root, i.e. sudo ./install-lldb.sh"
+  echo "This install script must be run as root, i.e. sudo ./install-perf.sh"
   exit 1
 fi
 

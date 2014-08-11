@@ -55,4 +55,4 @@ This installs the latest available `perf` version.
 ## What Now
 
 We'll be posting more here shortly, but for now you can refer to [@trevnorris perf
-gist](https://gist.github.com/trevnorris/f0907b010c9d5e24ea97#file-all-my-knowledge-md) for now.
+gist](https://gist.github.com/trevnorris/f0907b010c9d5e24ea97#file-all-my-knowledge-md).
