@@ -47,4 +47,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end 
 
   config.vm.provision :shell, :path => "bootstrap.sh"
+
+  # thlorenz customizations
+  config.vm.synced_folder "~/dotfiles", "/home/vagrant/dotfiles"
+  config.vm.synced_folder "~/dev", "/home/vagrant/dev"
 end
